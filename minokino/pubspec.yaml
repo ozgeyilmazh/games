@@ -1,0 +1,62 @@
+name: dino_run
+description: A 2D infinite side scroller.
+
+publish_to: "none"
+
+version: 1.0.2+3
+
+environment:
+  sdk: '>=3.3.4 <4.0.0'
+
+dependencies:
+  flame: 1.30.0
+  flame_audio: 2.11.7
+  hive: 2.2.3
+  path_provider: 2.1.5
+  provider: 6.1.5
+  google_mobile_ads: ^6.0.0
+  flutter:
+    sdk: flutter
+  cupertino_icons: 1.0.8
+
+dev_dependencies:
+  hive_generator: 2.0.1
+  build_runner: 2.4.13
+  flutter_test:
+    sdk: flutter
+  flutter_lints: 6.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    # Menu character previews (explicit so release/APK always bundles them).
+    - assets/images/minoki_doux.gif
+    - assets/images/minoki_mort.gif
+    - assets/images/minoki_tard.gif
+    - assets/images/minoki_vita.gif
+    - assets/images/parallax/
+    - assets/images/parallax2/
+    - assets/images/Bat/
+    - assets/images/Enemy/
+    - assets/images/Mushroom/
+    - assets/images/Daemon/
+    - assets/images/Plant1/
+    - assets/images/Plant2/
+    - assets/images/Plant3/
+    - assets/audio/
+
+  fonts:
+    - family: Audiowide
+      fonts:
+        - asset: assets/fonts/Audiowide/Audiowide-Regular.ttf
+
+flutter_native_splash:
+  color: "#ffffff"
+  image: assets/images/logo.png
+  android: true
+  ios: true
+  web: false
+  android_12:
+    color: "#ffffff"
+    image: assets/images/logo.png
